@@ -1,0 +1,20 @@
+{
+  "name": "allthefronds",
+  "version": "1.0.0",
+  "description": "package for frondfinder",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaraEk/FrondFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaraEk/FrondFinder/issues"
+  },
+  "homepage": "https://github.com/LaraEk/FrondFinder#readme"
+}
