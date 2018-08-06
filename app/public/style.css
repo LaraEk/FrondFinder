@@ -1,0 +1,18 @@
+h1 {
+    color: rgb(84, 131, 72);
+}
+
+
+#plantbox {
+    width: 66%; 
+    height: auto;
+    margin: 2% 5% 10% 5%;
+    color: #18494d;
+    padding: 0 10% 10% 10%;
+    text-align: center;
+    border-style: solid;
+    border-width: 10px;
+    border-color:  #18494d;
+    position: absolute;
+    line-height: 25px;
+}
