@@ -5,6 +5,7 @@
 // ===============================================================================
 
 var frondData = require("../data/fronds");
+var friendData = require("../data/friends");
 // var waitListData = require("../data/waitinglistData");
 
 
@@ -20,9 +21,12 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/api/fronds", function(req, res) {
-    res.json(fronds);
+    res.json(frondData);
   });
 
+  app.get("/api/friends", function(req, res) {
+    res.json(friendData);
+  });
 //   app.get("/api/waitlist", function(req, res) {
 //     res.json(waitListData);
 //   });
@@ -35,10 +39,16 @@ module.exports = function(app) {
   // Then the server saves the data to the tableData array)
   // ---------------------------------------------------------------------------
 
-  // NOTE: THIS WILL PUSH PLANT INFO TO FRONDS.  YOU NEED ANOTHER ONE TO PUT TO FRIENDS
-  app.post("/api/fronds", function(req, res) {
-    tableData.push(req.body);
+  // NOTE: THIS WILL PUSH FRIEND INFO TO FRIENDS.  YOU NEED ANOTHER ONE TO GET STUFF FROM FRONDSDB
+  app.post("/api/friends", function(req, res) {
+    friendData.push(req.body);
     res.json(true);
+
+    // --------------------------------------------------
+    // I WANT TO MAKE "fronds" post from a database
+    // think about this after you get "friends" working
+    // --------------------------------------------------
+
     // // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // // It will do this by sending out the value "true" have a table
     // // req.body is available since we're using the body-parser middleware
