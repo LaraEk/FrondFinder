@@ -1,13 +1,12 @@
 h1 {
     /* color: rgb(84, 131, 72); */
-    color: red;
+    color:  #297a58;
 }
 
 
 #plantbox {
-    width: 66%; 
     height: auto;
-    margin: 2% 5% 10% 5%;
+    margin: 2% 15% 10% 15%;
     color: #18494d;
     padding: 0 10% 10% 10%;
     text-align: center;
@@ -16,4 +15,24 @@ h1 {
     border-color:  #18494d;
     position: absolute;
     line-height: 25px;
+}
+
+#friendorfrond {
+    margin: 2% 5% 5% 5%;
+    height: 200px;
+    color: #18494d;
+    padding: 0 5% 5% 5%;
+    text-align: center;
+    border-style: solid;
+    border-width: 10px;
+    border-color:  #18494d;
+    line-height: 25px;
+}
+
+.box {
+    float: left;
+    width: 200px;
+    margin: 2% 5% 2% 5%;
+    padding: 10px;
+    border: 2px dashed #297a58;;
 }
