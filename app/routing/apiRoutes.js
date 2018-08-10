@@ -43,8 +43,16 @@ module.exports = function(app) {
   app.post("/api/friends", function(req, res) {
     friendData.push(req.body);
     res.json(true);
+  });
 
-    // --------------------------------------------------
+    app.post("/api/fronds", function(req, res) {
+      // connection.query from mysql -- look for that
+  });
+
+      // friendData.push(req.body);
+      // res.json(true);
+
+      // --------------------------------------------------
     // I WANT TO MAKE "fronds" post from a database
     // think about this after you get "friends" working
     // --------------------------------------------------
@@ -60,7 +68,6 @@ module.exports = function(app) {
     //   waitListData.push(req.body);
     //   res.json(false);
     // }
-  });
 
   // ---------------------------------------------------------------------------
   // I added this below code so you could clear out the table while working with the functionality.

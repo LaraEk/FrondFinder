@@ -1,8 +1,33 @@
 h1 {
     /* color: rgb(84, 131, 72); */
     color:  #297a58;
+    font-family: 'Sofia';
+    font-size: 500%;
 }
 
+p {
+    font-family: 'Vollkorn';
+}
+
+h2 {
+    font-family: 'Vollkorn';
+}
+
+h3 {
+    font-family: 'Vollkorn';
+}
+
+h4 {
+    font-family: 'Vollkorn';
+}
+
+h5 {
+    font-family: 'Vollkorn';
+}
+
+h6 {
+    font-family: 'Vollkorn';
+}
 
 #plantbox {
     height: auto;
@@ -13,7 +38,6 @@ h1 {
     border-style: solid;
     border-width: 10px;
     border-color:  #18494d;
-    position: absolute;
     line-height: 25px;
 }
 
@@ -35,4 +59,28 @@ h1 {
     margin: 2% 5% 2% 5%;
     padding: 10px;
     border: 2px dashed #297a58;;
+}
+
+#friendsurveybox {
+    height: auto;
+    margin: 2% 15% 10% 15%;
+    color: #18494d;
+    padding: 0 10% 10% 10%;
+    text-align: center;
+    border-style: solid;
+    border-width: 10px;
+    border-color:  #18494d;
+    line-height: 25px;
+}
+
+button {
+    background-color:  #18494d;
+    border: double;
+    border-width: 5px;
+    color: rgb(250, 231, 231);
+    padding: 4px 10px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Sofia';
+    font-size: 22px;
 }
