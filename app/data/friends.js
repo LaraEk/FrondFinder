@@ -2,7 +2,7 @@
 // DATA
 // ===============================================================================
 
-var frondArray = [
+var friendArray = [
     {
         "name":"I like succulents",
         "photo":"https://i.imgur.com/j8OrbWh.jpg",
@@ -22,5 +22,5 @@ var frondArray = [
   ];
   
   // Note how we export the array. This makes it accessible to other files using require.
-  module.exports = frondArray;
+  module.exports = friendArray;
   
