@@ -10,30 +10,35 @@
       <script src="https://code.jquery.com/jquery.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+      <link rel="icon" type="image/jpg" href="/public/littlesuccfavicon.jpg" />
+      <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet'>
+      <link rel="stylesheet" type="text/css" href="/public/style.css">
+    
       <!-- Chosen -->
       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css"> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
     </head>
 
-<body>    
+<body style="background:url(/public/watercolorcacti.jpg)">    
 
-      <div class="container">
+      <div class="container" id="frondsurveybox" style="background-color: rgba(255, 255, 255, 0.85)">
 
-    <h2>Survey Questions</h2>
+    <h1>Survey Questions</h1>
     <hr>
 
-    <!-- <h3><strong>About You</strong></h3>
+    <h3><strong>About You</strong></h3>
     <h4>Name (Required)</h4>
-    <input type="text" id="name" class="form-control" required>
+    <input type="text" id="name" style="width: 40%" class="form-control" required>
 
-    <h4>Link to Photo Image (Required)</h4>
-    <input type="text" id="photo" class="form-control" required> -->
+    <h4>Link to Image (Required)</h4>
+    <input type="text" id="pic" style="width: 40%"class="form-control" required>
 
     <hr>
 
     <h3><strong>Question 1</strong></h3>
-    <h4>1 -- My house has a lot of light</h4>
+    <h3>1 -- My house has a lot of light</h3>
     <select class="chosen-select" id="q1">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -44,7 +49,7 @@
     </select>
 
     <h3><strong>Question 2</strong></h3>
-    <h4>2 -- I remember to water plants</h4>
+    <h3>2 -- I remember to water plants</h3>
     <select class="chosen-select" id="q2">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -56,7 +61,7 @@
 
 
     <h3><strong>Question 3</strong></h3>
-    <h4>3 -- I like plants that are more desert-y</h4>
+    <h3>3 -- I like plants that are more desert-y</h3>
     <select class="chosen-select" id="q3">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -68,7 +73,7 @@
 
 
     <h3><strong>Question 4</strong></h3>
-    <h4>4 -- I want to clean the air in my house</h4>
+    <h3>4 -- I want to clean the air in my house</h3>
     <select class="chosen-select" id="q4">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -80,7 +85,7 @@
 
 
     <h3><strong>Question 5</strong></h3>
-    <h4>5 -- I remember to take care of plants</h4>
+    <h3>5 -- I remember to take care of plants</h3>
     <select class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -92,7 +97,7 @@
 
 
     <h3><strong>Question 6</strong></h3>
-    <h4>6 -- I like leafy plants</h4>
+    <h3>6 -- I like leafy plants</h3>
     <select class="chosen-select" id="q6">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -104,7 +109,7 @@
 
 
     <h3><strong>Question 7</strong></h3>
-    <h4>7 -- I like succulents</h4>
+    <h3>7 -- I like succulents</h3>
     <select class="chosen-select" id="q7">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -115,7 +120,7 @@
     </select>
 
     <h3><strong>Question 8</strong></h3>
-    <h4>8 -- I like to propegate plants</h4>
+    <h3>8 -- I like to propegate plants</h3>
     <select class="chosen-select" id="q8">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -126,7 +131,7 @@
     </select>
 
     <h3><strong>Question 9</strong></h3>
-    <h4>9 -- I want a plant that has long vines</h4>
+    <h3>9 -- I want a plant that has long vines</h3>
     <select class="chosen-select" id="q9">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -137,7 +142,7 @@
     </select>
 
     <h3><strong>Question 10</strong></h3>
-    <h4>10 -- I want a modern-looking plant</h4>
+    <h3>10 -- I want a modern-looking plant</h3>
     <select class="chosen-select" id="q10">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -151,28 +156,106 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+    <button type="submit" class="btn" id="submit">Submit</button>
 
     <hr>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+        <p><a href="/api/fronds">API Fronds List</a> | <a href="https://github.com/laraek/FrondFinder">GitHub Repo</a></p>
       </div>
-    </footer> -->
+    </footer>
 
   </div>
+
+<!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header"> <!-- X out of the modal -->
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h1 class="modal-title" > <span class="glyphicon glyphicon-leaf"></span> Best Houseplant For You </h1>
+            </div>
+            <div class="modal-body">
+              <h2 id="match-name"></h2>
+              <img id="match-img" src="" alt="noimg" width="250px">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
+
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // ----- this part is the form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+      // ----- this part is the form validation
+
+      // If all required fields are filled
+      if (validateForm()) {
+        var userData = {
+          name: $("#name").val(),
+          pic: $("#pic").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+
+        $.post("/api/fronds", userData, function(data) {
+          $("#match-name").text(data.matchplantname);
+          $("#match-img").attr("src", data.matchplantpic);
+
+          $("#results-modal").modal("toggle");
+        });
+      } 
+      
+      // this is what happens if the form is not validated
+      else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+  </script>
+
+
 
 
 </body>
 </html>
 
 
-
-
-
-
-
+<!-- IN THE LONG RUN (ie after this is due on saturday)
 // pull all info from fronds_db
 // put it all into an object
 // iterate over it with a for-loop
@@ -182,7 +265,7 @@
 // whee this is fun :D 
 
 // PPS: make a .env to put your mysql password in when you make the DB!
-
+ -->
 
 <!-- 
         5: VERY LOTS YES

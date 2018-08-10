@@ -68,6 +68,38 @@ module.exports = function(app) {
 
   });
 
+
+  app.post("/api/fronds", function(req, res) {
+
+    var newPlantScores = req.body.scores;
+
+    var matchplantname = "";
+    var matchplantpic = "";
+    var totaldifference = 1000; // this is what we're comparing the difference to. not sure why so high.
+
+    for (var i = 0; i < frondData.length; i++) {
+
+      var difference = 0;
+      for (var z = 0; z < newPlantScores.length; z++) {
+        difference += Math.abs(frondData[i].scores[z] - newPlantScores[z]);
+      }
+
+      if (difference < totaldifference) {
+        console.log('Closest match found = ' + difference);
+				console.log('Plantname = ' + frondData[i].name);
+				console.log('Plantpic = ' + frondData[i].pic);
+
+        totaldifference = difference;
+        matchplantname = frondData[i].name;
+        matchplantpic = frondData[i].pic;
+      }
+    }
+
+  frondData.push(req.body);
+  res.json({status: "pushed", matchplantname: matchplantname, matchplantpic: matchplantpic});
+
+  });
+
 };
 
 
