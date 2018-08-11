@@ -31,7 +31,7 @@ h6 {
 
 #plantbox {
     height: auto;
-    margin: 2% 15% 10% 15%;
+    margin: 2% 15% 20% 15%;
     color: #18494d;
     padding: 0 10% 10% 10%;
     text-align: center;
@@ -73,6 +73,17 @@ h6 {
     line-height: 25px;
 }
 
+#frondsurveybox {
+    height: auto;
+    margin: 2% 15% 10% 15%;
+    color: #18494d;
+    padding: 0 10% 10% 10%;
+    text-align: center;
+    border-style: solid;
+    border-width: 10px;
+    border-color:  #18494d;
+    line-height: 25px;
+}
 button {
     background-color:  #18494d;
     border: double;
